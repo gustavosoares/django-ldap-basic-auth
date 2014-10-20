@@ -24,6 +24,9 @@ compile: clean
 	@python -tt -m compileall simple_audit
 	@python -tt -m compileall tests
 
+register:
+	@python setup.py register
+
 install:
 	@python setup.py install
 
