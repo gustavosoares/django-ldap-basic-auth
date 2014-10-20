@@ -35,7 +35,7 @@ Dependencies
 ============
 
 * Django >= 1.4.x
-* django-auth-ldap installed
+* django-auth-ldap (https://pythonhosted.org/django-auth-ldap/)
 
 
 TODO
