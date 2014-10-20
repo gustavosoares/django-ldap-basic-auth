@@ -19,7 +19,7 @@ class LdapBasicAuthBackend(LDAPBackend):
         except Exception, e:
             LOG.exception(e)
 
-        if settings.DJANGO_LDAP_BASIC_AUTH_ACTIVATED:
+        if settings.DJANGO_LDAP_BASIC_AUTH_ACTIVATED and user:
 
             base64string = base64.encodestring('%s:%s' % (username, password)).replace('\n', '')
             cache_key = cache_helper.get_cache_key_for_instance(user)
