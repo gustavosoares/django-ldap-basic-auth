@@ -29,6 +29,7 @@ Then modify your settings.py
 	DJANGO_LDAP_BASIC_AUTH_ACTIVATED = True
 
 
+You must define a django cache backend too.
 
 Dependencies
 ============
