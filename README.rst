@@ -26,7 +26,7 @@ Then modify your settings.py
         'django_ldap_basic_auth.middleware.InjectBasicAuthMiddleware',
     )
 
-	DJANGO_LDAP_BASIC_AUTH_ACTIVATED = True
+    DJANGO_LDAP_BASIC_AUTH_ACTIVATED = True
 
 
 You must define a django cache backend too.
