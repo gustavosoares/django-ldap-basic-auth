@@ -9,14 +9,12 @@ Installation
 ===============
 You can install django-ldap-basic-auth in 2 ways: using pip or by setup.py install
 
-.. code-block:: bash
 
     $ pip install django-ldap-basic-auth
 
 
 Then modify your settings.py
 
-.. code-block:: bash
 
     INSTALLED_APPS = INSTALLED_APPS + (
         'django_ldap_basic_auth',
