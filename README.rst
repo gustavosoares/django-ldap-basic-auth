@@ -48,4 +48,6 @@ CHANGELOG
 =========
 * 0.0.1
 	* first version
+* 0.0.2
+    * including request.session.modified = True to make sure that Django will persist the session
 

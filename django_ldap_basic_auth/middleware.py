@@ -18,6 +18,7 @@ class InjectBasicAuthMiddleware(object):
             basic_auth = cache.get(cache_key)
             if basic_auth:
                 request.session["Authorization"] = basic_auth
+                request.session.modified = True
                 request.META["HTTP_AUTHORIZATION"] = basic_auth
                 cache.delete(cache_key)
 
