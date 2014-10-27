@@ -28,6 +28,9 @@ Then modify your settings.py
 
     DJANGO_LDAP_BASIC_AUTH_ACTIVATED = True
 
+If you want to store the information in a http cookie, called HTTP_AUTHORIZATION, then put in your settings.py:
+
+    DJANGO_LDAP_BASIC_AUTH_USE_COOKIES = True
 
 You must define a django cache backend too.
 
@@ -50,4 +53,5 @@ CHANGELOG
 	* first version
 * 0.0.2
     * including request.session.modified = True to make sure that Django will persist the session
-
+* 0.0.3
+    * use http cookie to store data
