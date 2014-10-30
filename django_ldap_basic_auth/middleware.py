@@ -26,7 +26,7 @@ class InjectBasicAuthMiddleware(object):
     def process_response(self, request, response):
 
         if settings.DJANGO_LDAP_BASIC_AUTH_USE_COOKIES and settings.DJANGO_LDAP_BASIC_AUTH_ACTIVATED:
-            if not request.user.is_anonymous() and request.user.is_authenticated():
+            if hasattr(request, 'user') and not request.user.is_anonymous() and request.user.is_authenticated():
                 user = request.user
                 cache_key = cache_helper.get_cache_key_for_instance(user)
                 basic_auth = cache.get(cache_key)

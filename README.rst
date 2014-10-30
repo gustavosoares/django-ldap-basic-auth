@@ -55,3 +55,5 @@ CHANGELOG
     * including request.session.modified = True to make sure that Django will persist the session
 * 0.0.3
     * use http cookie to store data
+* 0.0.4
+    * check if request has atribute user
